@@ -91,9 +91,9 @@ export default async (req, res) => {
         }
       ]
     })
-    res.status(200).send('')
+    res.redirect('/done')
   } catch (e) {
     console.error(e)
-    res.status(500).send(e.message)
+    res.redirect('/error?message=' + encodeURIComponent(e.message))
   }
 }
