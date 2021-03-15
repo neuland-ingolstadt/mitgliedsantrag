@@ -64,7 +64,7 @@ Signal akzeptiert:
 ${form.acceptSignal ? 'Ja' : 'Nein'}
 
 Zeitstempel:
-${new Date().toLocaleString()}
+${new Date().toLocaleString('de-DE')}
 `
 }
 
