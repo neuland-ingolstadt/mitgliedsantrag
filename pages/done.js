@@ -3,7 +3,7 @@ import Container from '../components/Container'
 
 export default function Done () {
   return (
-    <Container title="Neuland Ingolstadt: Mitgliedsantrag">
+    <Container title="Mitgliedsantrag">
       <div className="container">
         <p>
           Dein Mitgliedsantrag ist bei uns eingegangen!<br />

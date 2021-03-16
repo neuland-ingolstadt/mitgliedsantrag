@@ -6,7 +6,7 @@ export default function Error () {
   const router = useRouter()
 
   return (
-    <Container title="Neuland Ingolstadt: Fehler">
+    <Container title="Fehler">
       <div className="container">
         <p>
           Uff, es ist ein Fehler aufgetreten.

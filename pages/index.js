@@ -8,7 +8,7 @@ export default function Home () {
   const [status, setStatus] = useState(null)
 
   return (
-    <Container title="Neuland Ingolstadt: Mitgliedsantrag">
+    <Container title="Mitgliedsantrag">
       <div className="container">
         <p>
           Füll den Antrag unten aus und wir melden uns so schnell wie möglich. :)
@@ -20,7 +20,7 @@ export default function Home () {
           <fieldset>
             <legend>Persönliche Daten</legend>
             <div className="form-group">
-              <label htmlFor="firstName">Vorname:*</label>
+              <label htmlFor="firstName">Vorname*</label>
               <input
                 id="firstName"
                 name="firstName"
@@ -30,7 +30,7 @@ export default function Home () {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="lastName">Nachname:*</label>
+              <label htmlFor="lastName">Nachname*</label>
               <input
                 id="lastName"
                 name="lastName"
@@ -40,7 +40,7 @@ export default function Home () {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="birthDate">Geburtsdatum:*</label>
+              <label htmlFor="birthDate">Geburtsdatum*</label>
               <input
                 id="birthDate"
                 name="birthDate"
@@ -50,7 +50,7 @@ export default function Home () {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="addressLine1">Straße, Hausnummer:*</label>
+              <label htmlFor="addressLine1">Straße, Hausnummer*</label>
               <input
                 id="addressLine1"
                 name="addressLine1"
@@ -60,7 +60,7 @@ export default function Home () {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="addressLine2">PLZ, Stadt:*</label>
+              <label htmlFor="addressLine2">PLZ, Stadt*</label>
               <input
                 id="addressLine2"
                 name="addressLine2"
@@ -74,7 +74,7 @@ export default function Home () {
           <fieldset>
             <legend>Kontaktdaten</legend>
             <div className="form-group">
-              <label htmlFor="email">E-Mail:*</label>
+              <label htmlFor="email">E-Mail*</label>
               <input
                 id="email"
                 name="email"
@@ -84,7 +84,7 @@ export default function Home () {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="phoneNumber">Mobilfunknummer:*</label>
+              <label htmlFor="phoneNumber">Mobilfunknummer*</label>
               <input
                 id="phoneNumber"
                 name="phoneNumber"
@@ -96,7 +96,7 @@ export default function Home () {
           </fieldset>
 
           <fieldset>
-            <legend>Status*</legend>
+            <legend>Status</legend>
             <div className="form-group">
               <input
                 id="status1"
