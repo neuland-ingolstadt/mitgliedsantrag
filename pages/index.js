@@ -194,7 +194,6 @@ export default function Home () {
                 id="acceptSignal"
                 name="acceptSignal"
                 type="checkbox"
-                required
               />
               <label htmlFor="acceptSignal">
                 Ich erlaube die Verwendung meiner Mobilfunknummer zur Nutzung der Signal-Gruppe.<sup>2</sup>
