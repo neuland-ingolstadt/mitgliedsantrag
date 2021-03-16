@@ -20,7 +20,7 @@ export default function Home () {
           <fieldset>
             <legend>Persönliche Daten</legend>
             <div className="form-group">
-              <label htmlFor="firstName">Vorname:</label>
+              <label htmlFor="firstName">Vorname:*</label>
               <input
                 id="firstName"
                 name="firstName"
@@ -30,7 +30,7 @@ export default function Home () {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="lastName">Nachname:</label>
+              <label htmlFor="lastName">Nachname:*</label>
               <input
                 id="lastName"
                 name="lastName"
@@ -40,7 +40,7 @@ export default function Home () {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="birthDate">Geburtsdatum:</label>
+              <label htmlFor="birthDate">Geburtsdatum:*</label>
               <input
                 id="birthDate"
                 name="birthDate"
@@ -50,7 +50,7 @@ export default function Home () {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="addressLine1">Straße, Hausnummer:</label>
+              <label htmlFor="addressLine1">Straße, Hausnummer:*</label>
               <input
                 id="addressLine1"
                 name="addressLine1"
@@ -60,7 +60,7 @@ export default function Home () {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="addressLine2">PLZ, Stadt:</label>
+              <label htmlFor="addressLine2">PLZ, Stadt:*</label>
               <input
                 id="addressLine2"
                 name="addressLine2"
@@ -74,7 +74,7 @@ export default function Home () {
           <fieldset>
             <legend>Kontaktdaten</legend>
             <div className="form-group">
-              <label htmlFor="email">E-Mail:</label>
+              <label htmlFor="email">E-Mail:*</label>
               <input
                 id="email"
                 name="email"
@@ -84,7 +84,7 @@ export default function Home () {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="phoneNumber">Mobilfunknummer:</label>
+              <label htmlFor="phoneNumber">Mobilfunknummer:*</label>
               <input
                 id="phoneNumber"
                 name="phoneNumber"
@@ -96,7 +96,7 @@ export default function Home () {
           </fieldset>
 
           <fieldset>
-            <legend>Status</legend>
+            <legend>Status*</legend>
             <div className="form-group">
               <input
                 id="status1"
@@ -127,39 +127,43 @@ export default function Home () {
             <fieldset>
               <legend>Studium</legend>
               <div className="form-group">
-                <label htmlFor="course">Studiengang</label>
+                <label htmlFor="course">Studiengang*</label>
                 <input
                   id="course"
                   name="course"
                   type="text"
                   placeholder="z.B. Informatik"
+                  required
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="degree">Angestrebter Abschluss</label>
+                <label htmlFor="degree">Angestrebter Abschluss*</label>
                 <input
                   id="degree"
                   name="degree"
                   type="text"
                   placeholder="z.B. Bachelor of Science"
+                  required
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="university">Hochschule</label>
+                <label htmlFor="university">Hochschule*</label>
                 <input
                   id="university"
                   name="university"
                   type="text"
                   placeholder="z.B. Technische Hochschule Ingolstadt"
+                  required
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="graduation">Voraussichtliches Studienende</label>
+                <label htmlFor="graduation">Voraussichtliches Studienende*</label>
                 <input
                   id="graduation"
                   name="graduation"
                   type="text"
                   placeholder="z.B. WS 22/23"
+                  required
                 />
               </div>
             </fieldset>
@@ -175,7 +179,7 @@ export default function Home () {
                 required
               />
               <label htmlFor="acceptStatute">
-                Ich erkenne die <a href="https://pad.informatik.sexy/Satzung" target="_blank" rel="noreferrer">Satzung</a> des Vereins an.
+                Ich erkenne die <a href="https://pad.informatik.sexy/Satzung" target="_blank" rel="noreferrer">Satzung</a> des Vereins an.*
               </label>
             </div>
             <div className="form-group">
@@ -186,7 +190,7 @@ export default function Home () {
                 required
               />
               <label htmlFor="acceptPrivacy">
-                Ich habe die <a href="https://pad.informatik.sexy/Datenschutzhinweise" target="_blank" rel="noreferrer">Datenschutzhinweise</a> zur Kenntnis genommen und bin mit der <a href="https://pad.informatik.sexy/Datenschutzordnung" target="_blank" rel="noreferrer">Datenschutzordnung</a> des Vereins einverstanden.
+                Ich habe die <a href="https://pad.informatik.sexy/Datenschutzhinweise" target="_blank" rel="noreferrer">Datenschutzhinweise</a> zur Kenntnis genommen und bin mit der <a href="https://pad.informatik.sexy/Datenschutzordnung" target="_blank" rel="noreferrer">Datenschutzordnung</a> des Vereins einverstanden.*
               </label>
             </div>
             <div className="form-group">
@@ -201,6 +205,7 @@ export default function Home () {
             </div>
           </fieldset>
           <p>
+            * Pflichtfeld<br />
             <sup>1</sup> Nachweis über Studierendenstatus erforderlich<br />
             <sup>2</sup> Unterliegt <a href="https://signal.org/legal/" target="_blank" rel="noreferrer">zusätzlichen Datenschutzbestimmungen</a>
           </p>
