@@ -82,6 +82,7 @@ export default async (req, res) => {
     await transporter.sendMail({
       from: process.env.MAIL_FROM,
       to: process.env.MAIL_TO,
+      replyTo: form.email,
       subject: getSubject(form),
       text: getBody(form),
       attachments: [
