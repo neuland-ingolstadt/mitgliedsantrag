@@ -65,6 +65,9 @@ ${form.acceptSignal ? 'Ja' : 'Nein'}
 
 Zeitstempel:
 ${new Date().toLocaleString('de-DE')}
+
+Akzeptieren:
+https://membership.informatik.sexy/create-member?firstName=${encodeURIComponent(form.firstName)}&lastName=${encodeURIComponent(form.lastName)}&email=${encodeURIComponent(form.email)}
 `
 }
 
