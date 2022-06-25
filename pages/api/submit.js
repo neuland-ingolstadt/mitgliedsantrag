@@ -95,9 +95,9 @@ export default async (req, res) => {
         }
       ]
     })
-    res.redirect('/done')
+    res.redirect(303, '/done')
   } catch (e) {
     console.error(e)
-    res.redirect('/error?message=' + encodeURIComponent(e.message))
+    res.redirect(303, '/error?message=' + encodeURIComponent(e.message))
   }
 }
