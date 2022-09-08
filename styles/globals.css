@@ -1,77 +1,18 @@
-@font-face {
-  font-family: 'Inconsolata';
-  src: url('/Inconsolata-VariableFont_wdth,wght.ttf');
+.container {
+  padding: 20px;
+  max-width: 768px;
 }
-
-:root {
-  --font-stack: Inconsolata, Consolas, monospace;
-  --global-font-size: 17px;
-  --page-width: 860px;
+h4 {
+  font-size: 16pt;
+  padding-top: 10px;
 }
-
-* {
-  font-family: var(--font-stack);
+.heading {
+  float: left;
 }
-
-.btn.btn-ghost:hover {
-  color: var(--invert-font-color);
-  background: var(--primary-color);
+.logo {
+  float: right;
+  width: 100px;
 }
-
-.cols {
-  display: flex;
-}
-
-.cols > * {
-  flex: 1;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-color: #222225;
-    --font-color: #e8e9ed;
-    --invert-font-color: #222225;
-    --secondary-color: #a3abba;
-    --tertiary-color: #a3abba;
-    --primary-color: #62c4ff;
-    --error-color: #ff3c74;
-    --progress-bar-background: #3f3f44;
-    --progress-bar-fill: #62c4ff;
-    --code-bg-color: #3f3f44;
-  }
-}
-
-.form-group {
-  align-items: center;
-}
-
-.form-group label {
-  min-width: 30%;
-}
-
-fieldset {
-  border: 1px solid var(--secondary-color);
-  margin-bottom: 1em;
-}
-
-input[type=text], input[type=email], input[type=tel], input[type=date] {
-  height: 45px;
-}
-
-input[required] {
-  border: 1px solid var(--primary-color) !important;
-}
-
-input[type=date], input[type=tel] {
-  width: 100%;
-  border-radius: 0;
-  padding: .7em .5em;
-  box-sizing: border-box;
-  -webkit-appearance: none;
-  font-size: var(--global-font-size);
-  font-family: var(--font-stack);
-}
-
-input[type=radio], input[type=checkbox] {
-  margin-right: .5em;
+.clear {
+  clear: both;
 }

@@ -18,56 +18,71 @@ function getSubject (form) {
 function getBody (form) {
   return `Es ist ein neuer Mitgliedsantrag eingangen.
 
+== Persönliche Daten ==
+
 Vorname:
 ${form.firstName}
 
 Nachname:
 ${form.lastName}
 
+Telefonnummer:
+${form.phone}
+
 Geburtsdatum:
 ${form.birthDate}
 
-Straße, Hausnummer:
-${form.addressLine1}
+Private E-Mail-Adresse:
+${form.privateEmail}
 
-PLZ, Stadt:
-${form.addressLine2}
+Hochschul-E-Mail-Adresse:
+${form.uniEmail}
 
-E-Mail:
-${form.email}
+Straße (Semesteranschrift):
+${form.uniStreet}
 
-Mobilfunknummer:
-${form.phoneNumber}
+PLZ, Ort (Semesteranschrift):
+${form.uniCity}
 
-Status:
-${form.status}
+Straße (Wohnsitz):
+${form.homeStreet}
 
-Studiengang:
-${form.course}
+PLZ, Ort (Wohnsitz):
+${form.homeCity}
 
-Angestrebter Abschluss:
-${form.degree}
+Fakultät:
+${form.faculty}
 
-Hochschule:
-${form.university}
+Studienbeginn:
+${form.uniStart}
 
-Voraussichtliches Studienende:
-${form.graduation}
+== Lastschriftmandat ==
 
-Satzung akzeptiert:
-${form.acceptStatute ? 'Ja' : 'Nein'}
+Vorname:
+${form.sepaFirstName}
 
-Datenschutz akzeptiert:
-${form.acceptPrivacy ? 'Ja' : 'Nein'}
+Nachname:
+${form.sepaLastName}
 
-Signal akzeptiert:
-${form.acceptSignal ? 'Ja' : 'Nein'}
+Straße:
+${form.sepaStreet}
+
+PLZ, Ort:
+${form.sepaCity}
+
+Kreditinstitut:
+${form.bank}
+
+IBAN:
+${form.iban}
+
+BIC:
+${form.bic}
+
+== Metadaten ==
 
 Zeitstempel:
 ${new Date().toLocaleString('de-DE')}
-
-Akzeptieren:
-https://membership.informatik.sexy/create-member?firstName=${encodeURIComponent(form.firstName)}&lastName=${encodeURIComponent(form.lastName)}&email=${encodeURIComponent(form.email)}
 `
 }
 

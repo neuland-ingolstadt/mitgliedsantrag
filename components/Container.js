@@ -14,23 +14,22 @@ export default function Container ({ title, children }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="container">
-        <div className="terminal-nav">
-          <header className="terminal-logo">
-            <div className="logo terminal-prompt">
-              {title}
-            </div>
-          </header>
-        </div>
+        <h2 className='heading'>
+          Mitgliedsantrag
+        </h2>
+        <img className='logo' src="/logo.svg" alt="Students' Life" />
+        <div className='clear' />
         {children}
         <hr />
-        <div className="container">
-          <nav>
-            <ul>
-              <li><a href="https://neuland-ingolstadt.de/" rel="noreferrer" target="_blank">Neuland Ingolstadt</a></li>
-              <li><a href="https://neuland-ingolstadt.de/impressum.htm" rel="noreferrer" target="_blank">Impressum und Datenschutzerkl&auml;rung</a></li>
-            </ul>
-          </nav>
-        </div>
+        <p>
+          <small>
+            Von <a href="https://students-life.de/" rel="noreferrer" target="_blank">Students' Life e.V.</a>
+            <> &ndash; </>
+            bereitgestellt durch <a href="https://neuland-ingolstadt.de/" rel="noreferrer" target="_blank">Neuland Ingolstadt e.V.</a>
+            <> &ndash; </>
+            <a href="https://students-life.de/impressum" rel="noreferrer" target="_blank">Impressum und Datenschutzerkl&auml;rung</a>
+          </small>
+        </p>
         <br />
       </div>
     </div>
