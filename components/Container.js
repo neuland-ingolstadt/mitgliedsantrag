@@ -23,7 +23,7 @@ export default function Container ({ title, children }) {
         <hr />
         <p>
           <small>
-            Von <a href="https://students-life.de/" rel="noreferrer" target="_blank">Students' Life e.V.</a>
+            Von <a href="https://students-life.de/" rel="noreferrer" target="_blank">Students&apos; Life e.V.</a>
             <> &ndash; </>
             bereitgestellt durch <a href="https://neuland-ingolstadt.de/" rel="noreferrer" target="_blank">Neuland Ingolstadt e.V.</a>
             <> &ndash; </>

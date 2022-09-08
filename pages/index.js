@@ -165,7 +165,7 @@ export default function Home () {
             </p>
             <p>
               <small>
-                Ich ermächtige Students' Life e. V., Zahlungen von meinem Konto mittels Lastschrift einzuziehen. Zugleich weise ich mein Kreditinstitut an, die von Students' Life e. V. auf mein Konto gezogene Lastschrift einzulösen. Hinweis: Ich kann innerhalb von acht Wochen, beginnend mit dem Belastungsdatum, die Erstattung des belasteten Betrages verlangen. Es gelten dabei die mit meinem Kreditinstitut vereinbarten Bedingungen.
+                Ich ermächtige Students&apos; Life e. V., Zahlungen von meinem Konto mittels Lastschrift einzuziehen. Zugleich weise ich mein Kreditinstitut an, die von Students&apos; Life e. V. auf mein Konto gezogene Lastschrift einzulösen. Hinweis: Ich kann innerhalb von acht Wochen, beginnend mit dem Belastungsdatum, die Erstattung des belasteten Betrages verlangen. Es gelten dabei die mit meinem Kreditinstitut vereinbarten Bedingungen.
               </small>
             </p>
           </Col>
@@ -275,16 +275,16 @@ export default function Home () {
           <Col>
             <h4>Vereinbarung</h4>
             <p>
-              Hiermit erkläre ich mich damit einverstanden an Students‘ Life e. V. einen Mitgliederbeitrag von 15 Euro pro Semester zu entrichten. 
+              Hiermit erkläre ich mich damit einverstanden an Students‘ Life e. V. einen Mitgliederbeitrag von 15 Euro pro Semester zu entrichten.
             </p>
             <p>
               Dieser Beitrag wird per SEPA-Lastschriftmandat am Ende des jeweiligen Semesters eingezogen (Stichtag: ordentliche Mitgliederversammlung am Ende jeden Semesters).
             </p>
             <p>
-              Zusätzlich habe ich die Möglichkeit, einen Antrag auf Mitgliedsausweis zu stellen. Dieser kann ab sofort von jedem Mitglied, welches die Zusatzvereinbarung akzeptiert, beantragt werden. 
+              Zusätzlich habe ich die Möglichkeit, einen Antrag auf Mitgliedsausweis zu stellen. Dieser kann ab sofort von jedem Mitglied, welches die Zusatzvereinbarung akzeptiert, beantragt werden.
             </p>
             <p>
-              Das Ausfüllen des Antrags berechtigt das Mitglied zum Besitz des Mitgliedsausweises und setzt voraus, dass bei dreimaliger Mithilfe an festgelegten Veranstaltungen von Students‘ Life der Mitgliederbeitrag verringert werden oder komplett entfallen kann. 
+              Das Ausfüllen des Antrags berechtigt das Mitglied zum Besitz des Mitgliedsausweises und setzt voraus, dass bei dreimaliger Mithilfe an festgelegten Veranstaltungen von Students‘ Life der Mitgliederbeitrag verringert werden oder komplett entfallen kann.
             </p>
             <p>
               Sollte ich mich nicht bereit erklären, den Mitgliederbeitrag zu entrichten, werde ich als Mitglied laut Paragraf 5 Absatz 6 der aktuellen Satzung aus dem Verein ausgeschlossen.
