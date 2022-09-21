@@ -4,7 +4,7 @@ import Container from '../components/Container'
 
 export default function Home () {
   return (
-    <Container>
+    <Container title="Mitgliedsantrag">
       <Form method="post" action="/api/submit">
         <Row>
           <h4>Persönliche Daten</h4>
@@ -64,6 +64,7 @@ export default function Home () {
               id="privateEmail"
               name="privateEmail"
               type="email"
+              required
             />
           </Col>
           <Col sm>
@@ -73,6 +74,7 @@ export default function Home () {
               name="uniEmail"
               type="email"
               pattern=".+@thi\.de"
+              required
             />
           </Col>
         </Row>
@@ -112,6 +114,7 @@ export default function Home () {
                 id="homeStreet"
                 name="homeStreet"
                 type="text"
+                required
               />
             </Form.Group>
           </Col>
@@ -122,6 +125,7 @@ export default function Home () {
                 id="homeCity"
                 name="homeCity"
                 type="text"
+                required
               />
             </Form.Group>
           </Col>
@@ -151,6 +155,7 @@ export default function Home () {
               name="uniStart"
               type="text"
               placeholder="WS / SS YYYY"
+              required
             />
           </Col>
         </Row>
@@ -158,15 +163,11 @@ export default function Home () {
           <Col>
             <h4>SEPA-Lastschriftmandat</h4>
             <p>
-              <strong>Gläubiger-ID:</strong> DE69ZZZ00002056000
-            </p>
-            <p>
+              <strong>Gläubiger-ID:</strong> DE69ZZZ00002056000<br />
               <strong>Mandatsreferenz:</strong> Die Mandatsreferenz wird separat mitgeteilt
             </p>
             <p>
-              <small>
-                Ich ermächtige Students&apos; Life e. V., Zahlungen von meinem Konto mittels Lastschrift einzuziehen. Zugleich weise ich mein Kreditinstitut an, die von Students&apos; Life e. V. auf mein Konto gezogene Lastschrift einzulösen. Hinweis: Ich kann innerhalb von acht Wochen, beginnend mit dem Belastungsdatum, die Erstattung des belasteten Betrages verlangen. Es gelten dabei die mit meinem Kreditinstitut vereinbarten Bedingungen.
-              </small>
+              Ich ermächtige Students&apos; Life e. V., Zahlungen von meinem Konto mittels Lastschrift einzuziehen. Zugleich weise ich mein Kreditinstitut an, die von Students&apos; Life e. V. auf mein Konto gezogene Lastschrift einzulösen. Hinweis: Ich kann innerhalb von acht Wochen, beginnend mit dem Belastungsdatum, die Erstattung des belasteten Betrages verlangen. Es gelten dabei die mit meinem Kreditinstitut vereinbarten Bedingungen.
             </p>
           </Col>
         </Row>
@@ -204,6 +205,7 @@ export default function Home () {
                 id="sepaStreet"
                 name="sepaStreet"
                 type="text"
+                required
               />
             </Form.Group>
           </Col>
@@ -214,6 +216,7 @@ export default function Home () {
                 id="sepaCity"
                 name="sepaCity"
                 type="text"
+                required
               />
             </Form.Group>
           </Col>
@@ -226,6 +229,7 @@ export default function Home () {
                 id="bank"
                 name="bank"
                 type="text"
+                required
               />
             </Form.Group>
           </Col>
@@ -239,6 +243,7 @@ export default function Home () {
                 name="iban"
                 type="text"
                 pattern="[A-Z]{2}[0-9A-Z ]{3,}"
+                required
               />
             </Form.Group>
           </Col>
@@ -250,17 +255,28 @@ export default function Home () {
                 name="bic"
                 type="text"
                 autoComplete
+                required
               />
             </Form.Group>
           </Col>
         </Row>
-        <Row>
+        <Row className="mt-3">
           <Col>
             <p>
-              <small>
-                Durch Erteilung des SEPA-Lastschriftmandats habe ich zuvor die Zusatzvereinbarung bzw. den Mitgliedsantrag von Students‘ Life e. V. akzeptiert. Somit bin ich damit einverstanden, dass Students‘ Life e. V. einen Mitgliedsbeitrag in Höhe von 15€ pro Semester erhebt, welcher durch dieses SEPA-Lastschriftmandat am Ende jeden Semesters eingezogen wird. Sollte ich damit nicht einverstanden sein oder innerhalb von 8 Wochen nach Belastungsdatum Erstattung des belasteten Betrages verlangen, ist es Students‘ Life e. V. vorbehalten meine Mitgliedschaft gemäß der aktuellen Vereinssatzung zu kündigen.
-              </small>
+              Durch Erteilung des SEPA-Lastschriftmandats habe ich zuvor die Zusatzvereinbarung bzw. den Mitgliedsantrag von Students‘ Life e. V. akzeptiert. Somit bin ich damit einverstanden, dass Students‘ Life e. V. einen Mitgliedsbeitrag in Höhe von 15€ pro Semester erhebt, welcher durch dieses SEPA-Lastschriftmandat am Ende jeden Semesters eingezogen wird. Sollte ich damit nicht einverstanden sein oder innerhalb von 8 Wochen nach Belastungsdatum Erstattung des belasteten Betrages verlangen, ist es Students‘ Life e. V. vorbehalten meine Mitgliedschaft gemäß der aktuellen Vereinssatzung zu kündigen.
             </p>
+          </Col>
+        </Row>
+        <Row className="mt-3">
+          <Col>
+            <Form.Group>
+              <Form.Check
+                id="sepa-check"
+                name="sepa-check"
+                label="Hiermit erkläre ich mich damit einverstanden, dass der Mitgliedsbeitrag in Höhe von 15 € pro Semester vom angegebenen Bankkonto eingezogen wird"
+                required
+              />
+            </Form.Group>
           </Col>
         </Row>
         <Row className="mt-3">
