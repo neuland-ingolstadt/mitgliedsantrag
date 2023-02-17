@@ -50,22 +50,32 @@ export default function Home () {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="addressLine1">Straße, Hausnummer*</label>
+              <label htmlFor="street">Straße und Hausnummer*</label>
               <input
-                id="addressLine1"
-                name="addressLine1"
+                id="street"
+                name="street"
                 type="text"
-                autoComplete="address-line1"
+                autoComplete="street-address"
                 required
               />
             </div>
             <div className="form-group">
-              <label htmlFor="addressLine2">PLZ, Stadt*</label>
+              <label htmlFor="zipCode">PLZ*</label>
               <input
-                id="addressLine2"
-                name="addressLine2"
+                id="zipCode"
+                name="zipCode"
                 type="text"
-                autoComplete="address-line2"
+                autoComplete="postal-code"
+                required
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="zipCode">Stadt*</label>
+              <input
+                id="city"
+                name="city"
+                type="text"
+                autoComplete="address-level2"
                 required
               />
             </div>
@@ -162,7 +172,7 @@ export default function Home () {
                   id="graduation"
                   name="graduation"
                   type="text"
-                  placeholder="z.B. WS 22/23"
+                  placeholder="z.B. WS 24/25"
                   required
                 />
               </div>

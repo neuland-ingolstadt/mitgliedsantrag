@@ -27,11 +27,14 @@ ${form.lastName}
 Geburtsdatum:
 ${form.birthDate}
 
-Straße, Hausnummer:
-${form.addressLine1}
+Straße und Hausnummer:
+${form.street}
 
-PLZ, Stadt:
-${form.addressLine2}
+PLZ:
+${form.zipCode}
+
+Stadt:
+${form.city}
 
 E-Mail:
 ${form.email}
@@ -71,6 +74,48 @@ https://membership.informatik.sexy/create-member?firstName=${encodeURIComponent(
 `
 }
 
+function getCsv (form) {
+  const headers = [
+    'firstName',
+    'lastName',
+    'birthDate',
+    'street',
+    'zipCode',
+    'city',
+    'phoneNumber',
+    'email',
+    'status',
+    'course',
+    'degree',
+    'university',
+    'graduation',
+    'acceptStatute',
+    'acceptPrivacy',
+    'acceptSignal',
+    'joinDate'
+  ]
+  const data = [
+    form.firstName,
+    form.lastName,
+    form.birthDate,
+    form.street,
+    form.zipCode,
+    form.city,
+    form.email,
+    form.phoneNumber,
+    form.status === 'student' ? 'Student' : 'Nicht Student',
+    form.course,
+    form.degree,
+    form.university,
+    form.graduation,
+    form.acceptStatute ? '1' : '0',
+    form.acceptPrivacy ? '1' : '0',
+    form.acceptSignal ? '1' : '0',
+    new Date().toISOString().substring(0, 10)
+  ]
+  return headers.join(';') + '\n' + data.join(';')
+}
+
 export const config = {
   api: {
     bodyParser: {
@@ -82,6 +127,10 @@ export const config = {
 export default async (req, res) => {
   try {
     const form = req.body
+    for (const key in form) {
+      form[key] = form[key].trim()
+    }
+
     await transporter.sendMail({
       from: process.env.MAIL_FROM,
       to: process.env.MAIL_TO,
@@ -92,6 +141,10 @@ export default async (req, res) => {
         {
           filename: sanitize(`${form.firstName.toLowerCase()}-${form.lastName.toLowerCase()}.json`),
           content: JSON.stringify(form, null, 2)
+        },
+        {
+          filename: sanitize(`${form.firstName.toLowerCase()}-${form.lastName.toLowerCase()}.csv`),
+          content: getCsv(form)
         }
       ]
     })
