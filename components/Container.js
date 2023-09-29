@@ -27,7 +27,9 @@ export default function Container ({ title, children }) {
             <> &ndash; </>
             bereitgestellt durch <a href="https://neuland-ingolstadt.de/" rel="noreferrer" target="_blank">Neuland Ingolstadt e.V.</a>
             <> &ndash; </>
-            <a href="https://students-life.de/impressum" rel="noreferrer" target="_blank">Impressum und Datenschutzerkl&auml;rung</a>
+            <a href="https://assets.neuland.app/students-life/imprint.pdf" rel="noreferrer" target="_blank">Impressum</a>
+            <> &ndash; </>
+            <a href="https://assets.neuland.app/students-life/privacy.pdf" rel="noreferrer" target="_blank">Datenschutzerkl&auml;rung</a>
           </small>
         </p>
         <br />
